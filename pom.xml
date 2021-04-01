@@ -158,6 +158,15 @@
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.0.0.M1</version>
         </plugin>
+		<plugin>
+		   <groupId>org.apache.tomcat.maven</groupId>
+		   <artifactId>tomcat9-maven-plugin</artifactId>
+		   <version>2.0</version>
+		   <configuration>
+		   <url>http://3.95.5.97:8080/manager/webapps</url>
+		   <path>/rps</path>
+		   </configuration>
+		</plugin>
       </plugins>
     </pluginManagement>
   </build>
